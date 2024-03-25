@@ -1,0 +1,10 @@
+[06-Nov-2023 15:05:16 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/genisla1/public_html/wp/wp-includes/class-wpdb.php on line 2035
+[06-Nov-2023 20:39:42 UTC] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Elementor\TemplateLibrary\Source_Local::on_save_post() must be an instance of WP_Post, null given, called in /home/genisla1/public_html/wp/wp-includes/class-wp-hook.php on line 312 and defined in /home/genisla1/public_html/wp/wp-content/plugins/elementor/includes/template-library/sources/local.php:1113
+Stack trace:
+#0 /home/genisla1/public_html/wp/wp-includes/class-wp-hook.php(312): Elementor\TemplateLibrary\Source_Local->on_save_post(7437, NULL)
+#1 /home/genisla1/public_html/wp/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 /home/genisla1/public_html/wp/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/genisla1/public_html/wp/wp-includes/post.php(4753): do_action('save_post', 7437, NULL, true)
+#4 /home/genisla1/public_html/wp/wp-includes/post.php(4855): wp_insert_post(Array, false, true)
+#5 /home/genisla1/public_html/wp/wp-content/plugins/elementor/includes/db.php(235): wp_update_post(Array)
+#6 /home/genisla1/public_html/wp/wp in /home/genisla1/public_html/wp/wp-content/plugins/elementor/includes/template-library/sources/local.php on line 1113
